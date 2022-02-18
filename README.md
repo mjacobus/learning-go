@@ -8,12 +8,38 @@ go run main.go
 
 Declaring a variable
 
-
 ```go
 var dogName string
+dogName = "Rute"
+
+// or
+
+dogName := RandomDogName()
 ```
 
+Variable scope: package name
 
+```go
+package main
+
+var dogName string
+
+func main() {
+  // dogName not available. It is available under anyware in the main package. (I think)
+}
+```
+
+Function return types
+
+
+```go
+
+func someFunction() (string, string){
+  return "a", "b"
+}
+
+a, b :=  someFunction()
+```
 
 
 ### Resources
