@@ -41,6 +41,39 @@ func someFunction() (string, string){
 a, b :=  someFunction()
 ```
 
+Function visibility:
+
+```go
+func thisIsPrivate() {
+  // lowercase
+}
+
+func ThisIsPrivate() {
+  // because of capital letter
+}
+```
+
+
+Defining a struct:
+
+```go
+
+type User struct {
+  FirstName string
+  LastName string
+  BirthDate time.Time
+}
+
+user := User{
+  FirstName: "Marcelo",
+  LastName: "Jacobus",
+}
+
+user.FirstName
+
+```
+
+
 
 ### Resources
 - [Udemy](https://www.udemy.com/course/building-modern-web-applications-with-go/learn/lecture/22910156#overview)
