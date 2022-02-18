@@ -1,0 +1,10 @@
+# test_runner.yml
+adapters:
+  golang:
+    adapter: custom
+    file_pattern: ".*_test.go"
+    command: "time go test"
+    commands:
+      all: "{command}"
+      file: "{command} {file}"
+      line: "{command} {file}:{line}"
